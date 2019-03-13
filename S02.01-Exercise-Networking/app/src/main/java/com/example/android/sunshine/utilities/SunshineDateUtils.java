@@ -39,7 +39,7 @@ public final class SunshineDateUtils {
      *
      * @param date A date in milliseconds in local time.
      *
-     * @return The number of days in UTC time from the epoch.
+     * @return The number of days in UTC time from the 8.
      */
     public static long getDayNumber(long date) {
         TimeZone tz = TimeZone.getDefault();
