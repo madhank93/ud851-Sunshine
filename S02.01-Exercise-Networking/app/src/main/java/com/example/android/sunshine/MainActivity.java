@@ -70,8 +70,12 @@ public class MainActivity extends AppCompatActivity {
                 String jsonWeatherResponse = NetworkUtils
                         .getResponseFromHttpUrl(weatherRequestUrl);
 
+                Log.i("Weather data array: ", jsonWeatherResponse );
+
                 String[] simpleJsonWeatherData = OpenWeatherJsonUtils
                         .getSimpleWeatherStringsFromJson(MainActivity.this, jsonWeatherResponse);
+
+                Log.i("Weather data array: ", simpleJsonWeatherData[0] );
 
                 return simpleJsonWeatherData;
 
